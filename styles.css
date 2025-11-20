@@ -60,6 +60,10 @@ h1 {
     transform: scale(0.95);
 }
 
+.round-btn:active {
+    transform: translateY(2px) scale(0.95);
+}
+
 .btn-light-gray {
     background-color: #a6a6a6;
     color: #000;
@@ -71,6 +75,10 @@ h1 {
     transform: scale(0.95);
 }
 
+.btn-light-gray:active {
+    transform: translateY(2px) scale(0.95);
+}
+
 .btn-orange {
     background-color: #ff9500;
     transition: background-color 0.2s, transform 0.2s;
@@ -79,6 +87,10 @@ h1 {
 .btn-orange:hover {
     background-color: #ffad33;
     transform: scale(0.95);
+}
+
+.btn-orange:active {
+    transform: translateY(2px) scale(0.95);
 }
 .round-btn{text-align: center;}
 .btn-orange{text-align: center;}
