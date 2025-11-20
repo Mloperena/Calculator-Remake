@@ -21,11 +21,12 @@ h1 {
 .calculator {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 12px;
     margin: 10px auto;
     max-width: 500px;
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .display {
@@ -41,18 +42,20 @@ h1 {
     justify-content: flex-end;
     border-radius: 10px;
     margin-bottom: 5px;
+    word-break: break-all;
 }
 
 .round-btn {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    font-size: 22px;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
     background-color: #333333;
     color: white;
     transition: background-color 0.2s, transform 0.2s;
+    margin: auto;
 }
 
 .round-btn:hover {
@@ -94,3 +97,26 @@ h1 {
 }
 .round-btn{text-align: center;}
 .btn-orange{text-align: center;}
+
+@media (max-width: 480px) {
+    .calculator {
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .round-btn {
+        width: 65px;
+        height: 65px;
+        font-size: 20px;
+    }
+    
+    .display {
+        font-size: 40px;
+        padding: 10px;
+        min-height: 60px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
